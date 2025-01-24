@@ -23,6 +23,44 @@
     <script src="./script.js"></script>
   </head>
   <body>
-    TODO List
+    <div
+      class="w-100 min-vh-100 bg-info d-flex justify-content-center align-items-center"
+    >
+      <div class="w-50 h-auto card shadow">
+        <div
+          class="card-header d-flex text-center justify-content-center align-items-center"
+        >
+          <h2 class="card-title p-3">ToDo List</h2>
+          <img
+            src="./images/notepad-pen.png"
+            alt="NotePad with pen"
+            class="img-fluid"
+            style="width: 50px; height: 50px"
+            draggable="false"
+          />
+        </div>
+
+        <div class="card-body">
+          <div class="mb-3 input-group">
+            <input
+              type="text"
+              class="form-control w-75"
+              name="addTask"
+              id="addTask"
+              aria-describedby="helpId"
+              placeholder="Add your task"
+            />
+
+            <button class="btn bg-success">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+
+          <div id="tasksWrapper">
+            <p id="message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
