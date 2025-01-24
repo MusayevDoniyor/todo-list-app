@@ -2,6 +2,7 @@ const container = document.getElementById("tasksWrapper");
 const tasksContainer = document.getElementById("tasks");
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
+const message = document.getElementById("message");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [
   {
@@ -32,8 +33,6 @@ const renderTasks = () => {
   tasksContainer.innerHTML = "";
 
   if (messageData.text) {
-    const message = document.createElement("p");
-
     if (messageData.type) {
       message.innerHTML = messageData.text;
     }
